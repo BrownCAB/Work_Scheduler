@@ -21,15 +21,15 @@ Provide instructions and examples for use. Include screenshots as needed.
 
     
     Screenshoot
-    ![screenshot](assets/screenshot.png)
+    ![screenshot](Develop/screenshot.png)
 
     Deployed project link
-    https://browncab.github.io/Code_Quiz/
+    https://browncab.github.io/Work_Schuduler/
 
     
 
 ## Credits
-W3schools, 2u Tutor
+W3schools - JavaScript new Date(), 2u Tutor
 
 ## License
 Please refer to the LICENSE in the repo.
