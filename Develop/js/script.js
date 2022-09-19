@@ -4,11 +4,10 @@ var save = $('.saveBtn');
 
 // Display Current date
 $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
-console.log(currentDay);
 
 // time block is color coded to indicate past, present or future
-function blockColor() {
-var hour = momnet().hours();
+function timeBlockColor() {
+var hour = moment().hours();
 
 $('.time-block').each(function() {
     var currHour = parseInt($(this).attr('id'));
@@ -36,10 +35,15 @@ function userPlans() {
 
     $(".hour").each(function() {
         var currHour = $(this).text();
+        console.log(currHour);
         var currPlan = localStorage.getItem(currHour);
-        
+        console.log(currPlan);
+       
         if(currPlan !== null) {
             $(this).siblings(".plan").val(currPlan);
         }
     });
 }
+
+userPlans();
+timeBlockColor();
