@@ -10,7 +10,7 @@ I am going create a Work Schedulder so I can plan and manage my time more effect
 I learned that Jquery is a Javascript simplified langauge that is now legacy langauge but is good to know the fundamental just in case I run into it. 
 
 ## Installation
-1. Download Start Code.
+1. Download Starter Code.
 2. Create HTML, CSS, and Javascript files.
 3. Modify the code based on the Acceptance criteria.
 4. Full fill the acceptances criteria grading requirements.
