@@ -2,8 +2,7 @@
 var save = $('.saveBtn');
 
 
-
-// Current date
+// Display Current date
 $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
 console.log(currentDay);
 
@@ -25,20 +24,22 @@ $('.time-block').each(function() {
 };
 
 //Click Savebtn to save input to local storage
-savebtn.on("click", function() {
-    var time = $(this).sibling(".hour").text();
-    var toDo = $(this).sibling(".toDo").text();
+save.on("click", function() {
+    var time = $(this).siblings(".hour").text();
+    var plan = $(this).siblings(".plan").val();
 
-    localStorage.setItem(time, toDo);
+    localStorage.setItem(time, plan);
 });
 
+// Getting Saved plans from storage
+function userPlans() {
 
-function savedtoDo() {
-    $('.hour').each(function() {
-    var currHour = $(this).text();
-    var currDo = localStorage.getItem(currHour);
-
-    if (currDo !== null) {
-        $(this).siblings()
-    }
-});
+    $(".hour").each(function() {
+        var currHour = $(this).text();
+        var currPlan = localStorage.getItem(currHour);
+        
+        if(currPlan !== null) {
+            $(this).siblings(".plan").val(currPlan);
+        }
+    });
+}
